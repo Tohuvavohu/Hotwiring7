@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image and Google Form Side by Side</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0; /* Optional: Set a background color */
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            width: 80vw; /* Adjust container width as needed */
+            gap: 2rem;   /* Gap between image and form */
+        }
+
+        .bg-image {
+            width: 40vw; /* Set width of image container */
+            height: 80vh; /* Set height of image container */
+            background-image: url('hotwiring.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        iframe {
+            border: none;
+            width: 40vw; /* Adjust width as needed */
+            height: 80vh; /* Adjust height as needed */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Optional shadow for aesthetics */
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="bg-image"></div> <!-- Your local image -->
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeNd0_xoGoQGh2SdMrASoHBtQ2dG2pogIHug2KhHtI7IIWFXg/viewform?usp=sf_link"></iframe> <!-- Your Google Form -->
+</div>
+
+</body>
+
+</html>
